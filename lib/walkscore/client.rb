@@ -3,20 +3,19 @@ require 'faraday'
 module WalkscoreApi
   class Client
     BASE_URL = 'http://api.walkscore.com'
-    API_KEY = "8a89b90e602ea73543053787f6bd7a6b"
 
     def initialize
       @connection = Faraday.new(BASE_URL)
     end
 
-    def make_connection(attributes)
+    def make_connection(location, api_key)
       response = @connection.get do |req|
         req.url '/score'
         req.headers['Accepts'] = 'application/json'
         req.params['format'] = 'json'
-        req.params['lat'] = attributes[:lat]
-        req.params['lon'] = attributes[:long]
-        req.params['wsapikey'] = API_KEY
+        req.params['lat'] = location[:lat]
+        req.params['lon'] = location[:long]
+        req.params['wsapikey'] = api_key
       end
       response.body
     end
