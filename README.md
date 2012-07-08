@@ -21,12 +21,12 @@ Or install it yourself as:
 
 ### WalkscoreApi::Walkscore.find({lat: 40.7143528 , long: -74.00597309999999 }, API_KEY)
 That's it!  You're response will be a Walkscore object where you have access to the following methods
-### score
-### description
-### updated
-### logo_url
-### ws_link
-## Contributing
++ score
++ description
++ updated
++ logo_url
++ ws_link
++ Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
