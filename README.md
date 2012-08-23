@@ -28,14 +28,43 @@ Then do this:
 
 When that's all done, you'll get a Walkscore::Result back. The result object has these things:
 
-Thing				| Purpose
-score				| The actual walk score of your Coordinates
-description			| A colorful description of the walk score. This is written by Walkscore employees, so blame them if you don't like it.
-updated				| When did Walkscore last update this location?
-score_uri			| A URI pointing right to Walkscore's page for this location.
-walkscore_logo_uri	| A URI pointing to the Walkscore Logo. Useful, I guess. For meeting the brading requirements.
-more_info_icon_uri	| A URI pointing to a handy icon.
-more_info_uri		| A URI pointing to info about how Walkscore works.
+<table>
+	<thead>
+		<tr>
+			<th>Thing</th>
+			<th>Purpose</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>score</td>
+			<td>The actual walk score of your Coordinates</td>
+		</tr>
+		<tr>
+			<td>description</td>
+			<td>A colorful description of the walk score. This is written by Walkscore employees, so blame them if you don't like it.</td>
+		</tr>
+		<tr>
+			<td>updated_at</td>
+			<td>When did Walkscore last update this location?</td>
+		</tr>
+		<tr>
+			<td>score_uri</td>
+			<td>A URI pointing right to Walkscore's page for this location.</td>
+		</tr>
+		<tr>
+			<td>walkscore_logo_uri</td>
+			<td>A URI pointing to the Walkscore Logo. Useful, I guess. For meeting the branding requirements.</td>
+		<tr>
+			<td>more_info_icon_uri</td>
+			<td>A URI pointing to a handy icon.</td>
+		</tr>
+		<tr>
+			<td>more_info_uri</td>
+			<td>A URI pointing to info about how Walkscore works.</td>
+		</tr>
+	</tbody>
+</table>
 
 ## Future plans
 
