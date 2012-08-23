@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.walkscore.com/score?format=json&lat=1&lon=1&wsapikey=walkscore+dropped+the+ball
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accepts:
+      - application/json
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+      expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      vary:
+      - Accept-Encoding
+      date:
+      - Thu, 23 Aug 2012 07:14:29 GMT
+      server:
+      - Google Frontend
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n\"status\": 2  \n\n\n\n}"
+    http_version: '1.1'
+  recorded_at: Thu, 23 Aug 2012 07:14:33 GMT
+recorded_with: VCR 2.2.4

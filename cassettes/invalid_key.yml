@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.walkscore.com/score?format=json&lat=38.898748&lon=-77.037684&wsapikey=this+is+not+a+valid+key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accepts:
+      - application/json
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json
+      expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      vary:
+      - Accept-Encoding
+      date:
+      - Thu, 23 Aug 2012 06:50:19 GMT
+      server:
+      - Google Frontend
+      connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "{\n\"status\": 40  \n\n\n\n}"
+    http_version: '1.1'
+  recorded_at: Thu, 23 Aug 2012 06:50:23 GMT
+recorded_with: VCR 2.2.4
